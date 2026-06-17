@@ -29,7 +29,7 @@ Currently: AI Engineering Apprentice at [Flatiron School](https://flatironschool
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
 
-> ⚠️ **Note for Gerry:** Add any other AI/ML tools you've actually used in the apprenticeship here (LangChain, OpenAI API, scikit-learn, Hugging Face, etc.). Only list what you've genuinely touched.
+
 
 ---
 
@@ -45,7 +45,7 @@ Full Stack Web Development with Python, Flask, and JavaScript. Certificate of Co
 
 ## 🚀 Featured Projects
 
-> ⚠️ **Note for Gerry:** Add an AI/ML project here — even one in-progress entry. A screener for junior AI engineering roles will not pass this profile without evidence of AI work. Even a simple LLM-powered tool, classification pipeline, or automation script from the apprenticeship counts. Use the format below.
+
 
 <!-- AI Project template (uncomment and fill in when ready):
 ### [Project Name](https://github.com/gerrywiegand/project-name)
