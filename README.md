@@ -13,6 +13,10 @@ Currently: AI Engineering Apprentice at [Flatiron School](https://flatironschool
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat&logo=playwright&logoColor=white)
+![BeautifulSoup](https://img.shields.io/badge/BeautifulSoup-3776AB?style=flat&logo=python&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI_API-412991?style=flat&logo=openai&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)
@@ -29,35 +33,30 @@ Currently: AI Engineering Apprentice at [Flatiron School](https://flatironschool
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
 
-
-
 ---
 
 ## 🎓 Education
 
 **Flatiron School** (Online) — *AI Engineering Immersive* (Apr 2026 – May 2027)
-Accelerated program covering AI engineering, data science, machine learning, and automation. Currently in AI Engineering Apprenticeship.
+Accelerated program covering AI engineering, data science, machine learning, and automation. Currently completing via AI Engineering Apprenticeship.
 
 **Flatiron School** (Online) — *Software Engineering* (Sep 2025 – Jan 2026)
-Full Stack Web Development with Python, Flask, and JavaScript. Certificate of Completion.
+Full Stack Web Development with Python, Flask, and JavaScript. Certificate of Completion awarded January 2026.
 
 ---
 
 ## 🚀 Featured Projects
 
+### [Website Regenerator](https://main.d2mawxipg96rob.amplifyapp.com/) *(Apprenticeship — Group Project)*
+AI-powered tool that transforms any website's visual design based on a user-specified theme. Users submit a URL and a style theme; the system crawls the target site with Playwright, extracts its CSS with BeautifulSoup, splits it into chunks, and sends them to GPT-4o in parallel via the OpenAI API — returning a fully restyled stylesheet processed through a serverless AWS pipeline with real-time status updates.
 
-
-<!-- AI Project template (uncomment and fill in when ready):
-### [Project Name](https://github.com/gerrywiegand/project-name)
-One sentence on what it does and why it's interesting.
-**Tech used:** Python, [AI tools], [other stack]
-[Demo](#) | [Repo](#)
--->
+**Tech used:** Python, AWS Lambda, OpenAI API (GPT-4o), S3, DynamoDB, SQS, Supabase, Playwright, BeautifulSoup
+[Live Demo](https://main.d2mawxipg96rob.amplifyapp.com/) | [Org](https://github.com/flatironaiapprenticeshipgroup1-png)
 
 ---
 
 ### [CatchLog](https://github.com/gerrywiegand/CatchLog)
-Full-stack fishing log application built around a Flask REST API with JWT authentication and ownership-based data access. Designed relational data models with SQLAlchemy, implemented CRUD endpoints for catch and species data, and enforced server-side authorization rules so users only access their own records. Mobile-friendly frontend designed for use in the field.
+Full-stack fishing log application built around a Flask REST API with JWT authentication and ownership-based data access. Designed relational data models with SQLAlchemy, implemented CRUD endpoints for catch and species data, and enforced server-side authorization rules so users only access their own records. Mobile-friendly frontend designed for use in the field. *(SQLite for development; PostgreSQL migration in progress.)*
 
 **Tech used:** Python, Flask, SQLAlchemy, SQLite, Flask-JWT-Extended, React
 [Demo](https://www.loom.com/share/17635d25f7ae4d71ba356157d2c45a2f) | [Repo](https://github.com/gerrywiegand/CatchLog)
@@ -65,7 +64,7 @@ Full-stack fishing log application built around a Flask REST API with JWT authen
 ---
 
 ### [GardenGrid](https://github.com/gerrywiegand/GardenGrid)
-Full-stack garden planning tool with business logic enforced server-side. Backend validates companion-planting compatibility rules, preventing invalid plant configurations based on defined relationships. Grid state is coordinated between client and server for consistency. Users build a plant library, place plants on coordinate grids, and see live placement warnings.
+Full-stack garden planning tool with a conflict-detection system enforced server-side. Users define companion-planting relationships between species; the backend validates each placement against those relationships and rejects incompatible configurations before they're saved. Live warnings (beneficial/detrimental) are coordinated between client and server so the grid state stays consistent.
 
 **Tech used:** Python, Flask, Flask-JWT-Extended, SQLAlchemy, SQLite, React
 [Demo](https://www.loom.com/share/f85ddb1606ed475f9458e3c829eba91c) | [Repo](https://github.com/gerrywiegand/GardenGrid)
